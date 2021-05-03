@@ -13,14 +13,19 @@ nav {
 main {
     display: flex;
     flex-direction: row;
-    flex: auto;
     height: 40rem;
 }
 
-#left {
-    flex: 0 0 20%;
+.left {
+    flex-basis: 30%;
 }
 
-#slideshow-container {
-    flex: 0 0 40%;
+.slideshow-container {
+    flex-basis: 70%;
+}
+
+footer {
+    height: 2.0rem;
+    width: 100%;
+    border: 1px solid red;
 }
