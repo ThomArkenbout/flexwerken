@@ -3,7 +3,7 @@ body {
     height: 100vh;
     grid-gap: 0.2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.3fr 0.2fr 2fr 0.2fr;
+    grid-template-rows: 0.3fr 0.15fr 2fr 0.15fr;
     grid-template-areas: "header header header header header"
                          "nav nav nav nav nav"
                          "main main slideshow slideshow slideshow"
@@ -28,10 +28,66 @@ main {
     grid-area: main;
 }
 
+/* SlideShow related content */
 .slideshow-container {
-    background: hsl(180, 100%, 40%);
     border: 1px solid black;
     grid-area: slideshow;
+    position: relative;
+}
+
+.Slides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+}
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
 }
 
 footer {
