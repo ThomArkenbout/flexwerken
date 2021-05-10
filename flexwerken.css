@@ -37,6 +37,8 @@ main {
 
 .Slides {
     display: none;
+    width: 40%;
+    height: auto;
 }
 
 /* Next & previous buttons */
