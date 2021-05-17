@@ -14,8 +14,37 @@ header {
 main {
     background: hsl(180, 100%, 50%);
     outline: black solid 1px;
-    height: 100rem;
-    max-height: 100rem;
+    height: 140rem;
+    max-height: 140rem;
+}
+
+#main-image-container {
+    height: 55rem;
+    max-height: 55rem;
+}
+
+#main-image {
+    width: 100%;
+    height: 55rem;
+    object-fit: cover;
+    object-position: 50% 80%;
+}
+
+#main-cards-container {
+    outline: black solid 1px;
+    height: 40rem;
+    max-height: 40rem;
+    display: flexbox;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#main-contact-container{
+    height: 40rem;
+    max-height: 40rem;
 }
 
 footer {
