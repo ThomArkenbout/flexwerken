@@ -55,7 +55,7 @@ main {
 }
 
 .card-title {
-    color: rgba(0, 0, 250, 1);
+    color: rgba(20, 20, 20, 1);
     font-size: 24px;
     margin: 12px;
 }
@@ -82,7 +82,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8em;
-    border: 5px solid rgba(0, 0, 250, 1);
+    border: 5px solid rgba(20, 20, 20, 1);
     border-radius: 5px;
 }
 
@@ -106,7 +106,7 @@ p {
 }
 
 .blue-text {
-    color: rgba(0, 0, 250, 1);
+    color: rgba(20, 20, 20, 1);
 }
 
 /*footer*/
