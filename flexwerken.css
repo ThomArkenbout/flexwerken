@@ -5,11 +5,34 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     outline: black solid 1px;
     background: hsl(180, 80%, 90%);
     height: 8rem;
     max-height: 8rem;
+}
+
+.logo {
+    outline: black solid 1px;
+    height: 5em;
+    width: 30em;
+    max-width: 30em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ol {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li {
+    margin: 1em;
 }
 
 .home-main {
@@ -77,10 +100,9 @@ header {
     height: 30em;
     max-height: 30em;
     width: 50em;
-    margin-top: 8em;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8em;
     border: 5px solid rgba(20, 20, 20, 0.8);
     border-radius: 5px;
     color: rgba(20, 20, 20, 0.8);
