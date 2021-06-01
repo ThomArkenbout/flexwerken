@@ -1,10 +1,4 @@
-@media (max-width: 480px) {
-    #main-contact {
-        width: 80%;
-    }
-}
-
- body {
+body {
     min-height: 100%;
     margin: 0rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -156,6 +150,26 @@ p {
 
 .green-text {
     color: rgba(0, 155, 155, 1);
+}
+
+@media (max-width: 480px) {
+    #main-contact {
+        width: 100%;
+        max-width: 100%;
+        border: none;
+        flex-wrap: wrap;
+    }
+
+    #main-contact-text-right {
+        flex-wrap: nowrap;
+        margin-left: 1em;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #openingstijden {
+        width: 100%;
+    }
 }
 
 /*footer*/
