@@ -1,3 +1,8 @@
+@media (max-width: 480px) {
+    #main-contact {
+        width: 80%;
+    }
+}
 
  body {
     min-height: 100%;
@@ -9,8 +14,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
     outline: black solid 1px;
-    background: hsl(180, 80%, 90%);
     height: 8rem;
     max-height: 8rem;
 }
@@ -22,17 +28,34 @@
     max-width: 30em;
     margin-top: auto;
     margin-bottom: auto;
+    margin-right: 20em;
 }
 
 ol {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-left: 15em;
+    
 }
 
-li {
+li a {
     margin: 1em;
+    font-size: 18px;
+    color: rgba(20, 20, 20, 0.8);
+    text-decoration: none;
+}
+
+ol a:hover {
+    border-bottom: 3px solid rgba(0, 155, 155, 1);
+}
+
+li a:active {
+    background-color: rgba(0, 155, 155, 1);
+    color: white;
 }
 
 .home-main {
@@ -53,12 +76,12 @@ li {
 /*Cards related*/
 #main-cards-container {
     background: rgba(0, 155, 155, 1);
-    height: 50rem;
-    max-height: 50rem;
+    max-height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -90,8 +113,7 @@ li {
 
 /*Contact related*/
 #main-contact-container{
-    height: 35rem;
-    max-height: 35rem;
+    max-height: 100%;
 }
 
 #main-contact {
@@ -99,10 +121,8 @@ li {
     flex-direction: row;
     height: 30em;
     max-height: 30em;
-    width: 50em;
-    margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
+    width: 45%;
+    margin: 5em auto 5em auto;
     border: 5px solid rgba(20, 20, 20, 0.8);
     border-radius: 5px;
     color: rgba(20, 20, 20, 0.8);
@@ -112,22 +132,29 @@ li {
     height: auto;
     width: 50%;
     max-width: 50%;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 1em;
 }
 
 #main-contact-text-right {
+    display: flex;
+    flex-direction: row;
     height: auto;
     width: 50%;
     max-width: 50%;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 p {
     margin: 0em;
+    line-height: 1.5em;
 }
 
-.blue-text {
+#openingstijden {
+    margin-top: 3em;
+}
+
+.green-text {
     color: rgba(0, 155, 155, 1);
 }
 
