@@ -92,6 +92,9 @@ li a:active {
 
 #main-image-container {
     max-height: 55rem;
+    text-align: center;
+    position: relative;
+    color: white;
 }
 
 #main-image {
@@ -99,6 +102,21 @@ li a:active {
     max-height: 55rem;
     object-fit: cover;
     object-position: 50% 80%;
+}
+
+#main-image-text {
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    text-shadow: 1px 1px 4px rgba(50, 50, 50, 0.8);
+}
+
+#main-image-text2 {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: left;
 }
 
 @media (max-width: 480px) {
@@ -126,7 +144,7 @@ li a:active {
     margin: 5em 3em 5em 3em;
     border-radius: 5px;
     background: white;
-    outline: 2px solid rgba(50, 50, 50, 0.8);
+    box-shadow: 2px 2px 8px rgba(50, 50, 50, 0.8);
 }
 
 .card-image {
@@ -137,14 +155,19 @@ li a:active {
 
 .card-title {
     color: rgba(0, 155, 155, 1);
-    font-size: 24px;
-    margin: 12px;
+    font-size: 20px;
+    margin: 18px 12px 12px 12px
 }
 
 .card-text {
     color: rgba(20, 20, 20, 0.8);
     font-size: 16px;
     margin: 0px 15px 15px 15px;
+}
+
+.meer-informatie {
+    font-style: italic;
+    font-size: 14px;
 }
 
 /*Contact related*/
