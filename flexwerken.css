@@ -5,35 +5,38 @@ body {
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    outline: black solid 1px;
     height: 8rem;
     max-height: 8rem;
 }
 
+.container-header {
+    height: 100%;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .logo {
+    float: left;
     outline: black solid 1px;
     height: 5em;
-    width: 30em;
-    max-width: 30em;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 20em;
+    width: 30%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.navbar {
+    width: 70%;
+    float: right;
+    margin-top: 5em;
 }
 
 ol {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 1em;
-    margin-left: 15em;
-    
+    flex-direction: row;  
+    margin-left: 50%;
+    flex-wrap: nowrap;
 }
 
 li a {
@@ -52,6 +55,36 @@ li a:active {
     color: white;
 }
 
+@media (max-width: 480px) {
+    .container-header {
+        width: 100%;
+    }
+
+    .logo {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar {
+        float: none;
+        width: 100%;
+        margin-top: unset;
+    }
+
+    ol {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: unset;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+}
+
+/*Main page container and image*/
+
 .home-main {
     height: 150rem;
     max-height: 150rem;
@@ -66,6 +99,15 @@ li a:active {
     max-height: 55rem;
     object-fit: cover;
     object-position: 50% 80%;
+}
+
+@media (max-width: 480px) {
+    #main-image-container {
+        display: none;
+    }
+    #main-image {
+        display: none;
+    }
 }
 /*Cards related*/
 #main-cards-container {
@@ -154,14 +196,18 @@ p {
 
 @media (max-width: 480px) {
     #main-contact {
+        height: 40em;
+        max-height: 100%;
         width: 100%;
         max-width: 100%;
         border: none;
         flex-wrap: wrap;
+        margin-bottom: 1em;
     }
 
     #main-contact-text-right {
         flex-wrap: nowrap;
+        margin-top: 0em;
         margin-left: 1em;
         width: 100%;
         max-width: 100%;
