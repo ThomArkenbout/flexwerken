@@ -83,8 +83,8 @@ li a:active {
     }
 }
 
-/*Main page container and image*/
 
+/*Main page container and image*/
 .home-main {
     height: 150rem;
     max-height: 150rem;
@@ -127,6 +127,8 @@ li a:active {
         display: none;
     }
 }
+
+
 /*Cards related*/
 #main-cards-container {
     background: rgba(0, 155, 155, 1);
@@ -136,6 +138,8 @@ li a:active {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .card {
@@ -166,16 +170,37 @@ li a:active {
 }
 
 .meer-informatie {
+    color: rgba(20, 20, 20, 0.8);
+    font-style: italic;
+    font-size: 14px;
+    text-align: right;
+    margin: 48px 15px 16px 15px;
+}
+
+p a {
+    text-decoration: none;
+    color: rgba(20, 20, 20, 0.8);
     font-style: italic;
     font-size: 14px;
 }
 
+@media (max-width: 480px) {
+    .card {
+        margin: 4em 3em 4em 3em;
+    }
+
+    .meer-informatie {
+        margin-top: 38px;
+    }
+}
+
+
 /*Contact related*/
-#main-contact-container{
+.main-contact-container{
     max-height: 100%;
 }
 
-#main-contact {
+.main-contact {
     display: flex;
     flex-direction: row;
     height: 30em;
@@ -187,7 +212,7 @@ li a:active {
     color: rgba(20, 20, 20, 0.8);
 }
 
-#main-contact-text-left {
+.main-contact-text-left {
     height: auto;
     width: 50%;
     max-width: 50%;
@@ -195,7 +220,7 @@ li a:active {
     margin-left: 1em;
 }
 
-#main-contact-text-right {
+.main-contact-text-right {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -209,26 +234,28 @@ p {
     line-height: 1.5em;
 }
 
-#openingstijden {
+.openingstijden {
     margin-top: 3em;
 }
 
 .green-text {
     color: rgba(0, 155, 155, 1);
+    font-weight: bold;
 }
 
 @media (max-width: 480px) {
-    #main-contact {
+    .main-contact {
         height: 40em;
         max-height: 100%;
         width: 100%;
         max-width: 100%;
         border: none;
         flex-wrap: wrap;
+        margin-top: 1rem;
         margin-bottom: 1em;
     }
 
-    #main-contact-text-right {
+    .main-contact-text-right {
         flex-wrap: nowrap;
         margin-top: 0em;
         margin-left: 1em;
@@ -236,10 +263,11 @@ p {
         max-width: 100%;
     }
 
-    #openingstijden {
+    .openingstijden {
         width: 100%;
     }
 }
+
 
 /*footer*/
 footer {
@@ -247,6 +275,7 @@ footer {
     height: 6rem;
     max-height: 6rem;
 }
+
 
 /*Over ons pagina*/
 #over-ons-main {
@@ -264,6 +293,7 @@ footer {
     object-fit: cover;
     object-position: 50% 100%;
 }
+
 
 /*Over ons text*/
 #grid-layout {
@@ -355,4 +385,100 @@ footer {
     height: 16rem;
     object-fit: cover;
     object-position: 50% 80%;
+}
+
+@media (max-width: 480px) {
+
+    #grid-layout {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10rem
+                            18rem
+                            1rem
+                            10rem
+                            18rem
+                            1rem
+                            10rem
+                            18rem;
+        row-gap: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .smaller-main-image-container {
+        display: none;
+    }
+
+    .small-image-container {
+        grid-column: 1;
+        grid-row: 1 / 1;
+    }
+
+    .small-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .text-container {
+        max-width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 2 / 3;
+    }
+
+    .rectangle {
+        width: 100%;
+        height: 1rem;
+        grid-column: 1;
+        grid-row: 3 / 4;
+    }
+
+    .small-image-container2 {
+        grid-column: 1;
+        grid-row: 4 / 5;
+    }
+    
+    .small-image2 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .text-container2 {
+        max-width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 5 / 6;
+    }
+    
+    .rectangle2 {
+        width: 100%;
+        height: 1rem;
+        grid-column: 1;
+        grid-row: 6 / 7;
+    }
+
+    .small-image-container3 {
+        grid-column: 1;
+        grid-row: 7 / 8;
+    }
+    
+    .small-image3 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .text-container3 {
+        max-width: 100%;
+        height: 100%;
+        grid-column: 1;
+        grid-row: 8 / 9;
+    }
 }
