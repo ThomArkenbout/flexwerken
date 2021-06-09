@@ -101,7 +101,7 @@ li a:active {
     width: 100%;
     max-height: 55rem;
     object-fit: cover;
-    object-position: 50% 80%;
+    object-position: 50% 30%;
 }
 
 #main-image-text {
@@ -155,6 +155,8 @@ li a:active {
     width: 100%;
     height: 10em;
     border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+    object-position: 50% 30%;
 }
 
 .card-title {
@@ -327,7 +329,7 @@ footer {
     width: 100%;
     height: 16rem;
     object-fit: cover;
-    object-position: 50% 80%;
+    object-position: 50% 60%;
 }
 
 .rectangle {
@@ -395,13 +397,13 @@ footer {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 10rem
-                            18rem
+                            32rem
                             1rem
                             10rem
-                            18rem
+                            27rem
                             1rem
                             10rem
-                            18rem;
+                            19rem;
         row-gap: 1rem;
         margin-top: 3rem;
         margin-bottom: 5rem;
